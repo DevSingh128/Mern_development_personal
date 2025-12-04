@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    <div class="introcard" style="width:300px; height: 300px; border: 2px solid blanchedalmond; ">
+        <div>
+            <img src=""  class="image"  width="200" height="200">
+        </div>
+        <div class="followers" style="color: aliceblue; margin-bottom: auto;"></div>
+    </div>
+</body>
+<script>
+    const followers = document.querySelector('.followers')
+    const myimage = document.querySelector('.image')
+    const requrl = 'https://api.github.com/users/devsingh128'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',requrl)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data)
+            myimage.src = data.avatar_url
+            followers.innerHTML = `followers count is ${data.followers}`
+        }
+    }
+    xhr.send()
+</script>
+</html>
