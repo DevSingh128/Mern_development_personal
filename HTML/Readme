@@ -1,0 +1,194 @@
+HTML – Interview Revision Notes
+
+1. What is HTML
+HTML (HyperText Markup Language) defines the structure of a web page.
+It is not a programming language; it is a markup language.
+Current standard: HTML5.
+
+
+
+2. Basic HTML Structure
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  Content
+</body>
+</html>
+
+DOCTYPE tells the browser that the document follows HTML5 standards.
+Head contains metadata.
+Body contains visible content.
+
+
+
+3. Semantic HTML
+Semantic elements describe meaning and structure.
+
+header  -> top section
+nav     -> navigation
+main    -> main content
+section -> logical grouping
+article -> independent content
+aside   -> sidebar
+footer  -> footer content
+
+Benefits:
+Better SEO
+Better accessibility
+Readable and maintainable code
+
+
+
+4. Block vs Inline Elements
+
+Block Elements:
+Take full width
+Start on new line
+Examples: div, p, h1-h6, section, article
+
+Inline Elements:
+Take only required width
+Examples: span, a, img, strong, em
+
+
+
+
+5. Attributes
+Provide additional information to elements.
+
+Common attributes:
+id (unique)
+class (reusable)
+src, href
+alt (accessibility)
+title
+data-*
+
+
+
+6. Forms and Input Elements
+
+Important input types:
+text
+email
+password
+checkbox
+radio
+submit
+
+Important attributes:
+name
+value
+placeholder
+required
+readonly
+disabled
+pattern
+
+
+
+7. HTML5 Input Types
+email
+number
+date
+time
+range
+file
+color
+
+
+
+8. Meta Tags
+Used for SEO and responsive design.
+
+description
+keywords
+viewport (important for mobile responsiveness)
+
+          
+
+9. Accessibility (A11y)
+Use semantic HTML
+Always use alt for images
+Use label with input
+Use aria attributes when needed
+
+
+
+10. HTML Entities
+Used to display reserved characters.
+
+&lt;   <
+&gt;   >
+&amp;  &
+&nbsp; space
+
+
+
+11. Multimedia
+audio and video tags allow native media embedding.
+
+Important attributes:
+controls
+autoplay
+loop
+muted
+
+
+          
+
+12. iframe
+Used to embed external content like videos or web pages.
+
+
+          
+
+13. Script vs Link
+script tag is used for JavaScript.
+link tag is used for CSS.
+
+          
+
+14. Inline vs Internal vs External
+Inline: inside the tag (not recommended)
+Internal: inside style or script tag
+External: separate file (best practice)
+
+
+          
+
+15. HTML vs HTML5
+
+HTML:
+Limited semantic tags
+No native audio/video
+
+HTML5:
+Rich semantic tags
+Native audio and video support
+Better accessibility
+LocalStorage and SessionStorage support
+
+
+          
+16. Common Interview Questions
+Difference between div and span
+What is semantic HTML?
+Why is alt attribute important?
+Block vs inline elements
+Purpose of doctype
+Difference between id and class
+
+
+
+          
+
+17. Best Practices
+Use semantic tags
+Proper indentation
+Avoid inline styling
+Always write accessible and SEO-friendly HTML
